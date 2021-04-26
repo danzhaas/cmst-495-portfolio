@@ -1,0 +1,1034 @@
+@charset "UTF-8";
+/* 
+ .o88b.  .d88b.  db       .d88b.  d8888b. .d8888. 
+d8P  Y8 .8P  Y8. 88      .8P  Y8. 88  `8D 88'  YP 
+8P      88    88 88      88    88 88oobY' `8bo.   
+8b      88    88 88      88    88 88`8b     `Y8b. 
+Y8b  d8 `8b  d8' 88booo. `8b  d8' 88 `88. db   8D 
+ `Y88P'  `Y88P'  Y88888P  `Y88P'  88   YD `8888Y' 
+ */
+.bg-lightest-blue {
+  background-color: #bce4ff;
+}
+
+.text-light-blue {
+  color: #92bbd6;
+}
+
+.bg-light-blue {
+  background-color: #92bbd6;
+}
+
+.text-mid-blue {
+  color: #40a2e3;
+}
+
+.bg-mid-blue {
+  background-color: #40a2e3;
+}
+
+.text-deep-blue {
+  color: #0044e3;
+}
+
+.bg-deep-blue {
+  background-color: #0044e3;
+}
+
+.bg-darkest-blue {
+  background-color: #030024;
+}
+
+.bg-lightest-gray {
+  background-color: #f1f1f1;
+}
+
+.text-lightest-gray {
+  color: #f1f1f1;
+}
+
+.text-light-gray {
+  color: #b5b5b5;
+}
+
+.bg-light-gray {
+  background-color: #b5b5b5;
+}
+
+.text-mid-gray {
+  color: #919191;
+}
+
+.bg-mid-gray {
+  background-color: #919191;
+}
+
+.text-deep-gray {
+  color: #737373;
+}
+
+.bg-deep-gray {
+  background-color: #737373;
+}
+
+.bg-darkest-gray {
+  background-color: #131313;
+}
+
+/* Gradients */
+.home-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(black), to(#0044e3));
+  background-image: linear-gradient(black, #0044e3);
+}
+
+.contact-gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0044e3), to(black));
+  background-image: linear-gradient(#0044e3, black);
+}
+
+/* 
+ d888b  db       .d88b.  d8888b.  .d8b.  db      
+88' Y8b 88      .8P  Y8. 88  `8D d8' `8b 88      
+88      88      88    88 88oooY' 88ooo88 88      
+88  ooo 88      88    88 88~~~b. 88~~~88 88      
+88. ~8~ 88booo. `8b  d8' 88   8D 88   88 88booo. 
+ Y888P  Y88888P  `Y88P'  Y8888P' YP   YP Y88888P                                  
+ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.5rem;
+  overflow-x: hidden;
+}
+
+.container, .container-fluid {
+  padding: 4px 0;
+  height: 100%;
+}
+
+.container > h1, .container-fluid > h1 {
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+  width: 100%;
+}
+
+a {
+  color: Blue;
+}
+
+a:hover {
+  color: #40a2e3;
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 1.5rem;
+}
+
+.badge {
+  font-size: 1.25rem;
+}
+
+.badge-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2px 0;
+}
+
+hr {
+  width: 100%;
+  border-top: 10px solid #40a2e3;
+  margin: 5vh;
+}
+
+#about ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.h2-underline {
+  border-bottom: 3px solid #919191;
+}
+
+.zoom, .dev-icon {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+.zoom:hover, .dev-icon:hover {
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+  cursor: pointer;
+}
+
+.line-top {
+  border-top: 10px solid #40a2e3;
+}
+
+.line-right {
+  border-right: 10px solid #40a2e3;
+}
+
+.line-bottom {
+  border-bottom: 10px solid #40a2e3;
+}
+
+.line-left {
+  border-left: 10px solid #40a2e3;
+}
+
+/* 
+d8b   db  .d8b.  db    db 
+888o  88 d8' `8b 88    88 
+88V8o 88 88ooo88 Y8    8P 
+88 V8o88 88~~~88 `8b  d8' 
+88  V888 88   88  `8bd8'  
+VP   V8P YP   YP    YP    
+ */
+#logo-text > p {
+  margin-bottom: 0;
+}
+
+.nav-item a {
+  color: black !important;
+  font-size: 2rem;
+  background-color: white;
+}
+
+.nav-link.active {
+  color: white !important;
+  background-color: #0044e3 !important;
+}
+
+/* 
+.d8888. d88888b  .o88b. d888888b d888888b  .d88b.  d8b   db .d8888. 
+88'  YP 88'     d8P  Y8 `~~88~~'   `88'   .8P  Y8. 888o  88 88'  YP 
+`8bo.   88ooooo 8P         88       88    88    88 88V8o 88 `8bo.   
+  `Y8b. 88~~~~~ 8b         88       88    88    88 88 V8o88   `Y8b. 
+db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D 
+`8888Y' Y88888P  `Y88P'    YP    Y888888P  `Y88P'  VP   V8P `8888Y' 
+*/
+/*
+██╗  ██╗ ██████╗ ███╗   ███╗███████╗
+██║  ██║██╔═══██╗████╗ ████║██╔════╝
+███████║██║   ██║██╔████╔██║█████╗  
+██╔══██║██║   ██║██║╚██╔╝██║██╔══╝  
+██║  ██║╚██████╔╝██║ ╚═╝ ██║███████╗
+╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚══════╝
+*/
+#home {
+  position: relative;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/code-illustration.svg");
+  background-size: cover;
+  background-position: center center;
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+#headline {
+  font-family: 'Poiret One', sans-serif;
+  font-weight: bold;
+}
+
+#dzh {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+/*  
+        ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
+        ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
+        ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   ███████╗
+        ██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   ╚════██║
+        ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   ███████║
+        ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
+*/
+#projects > div {
+  padding: 0;
+}
+
+#cards {
+  padding: 0;
+}
+
+.project-card {
+  position: absolute;
+  left: 3%;
+  right: 3%;
+  color: black;
+  background-color: white;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+.project-card .btn {
+  color: black;
+}
+
+.front .card-img-overlay {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+}
+
+.front img, .front .card-img-overlay {
+  -webkit-transition: -webkit-filter 0.5s;
+  transition: -webkit-filter 0.5s;
+  transition: filter 0.5s;
+  transition: filter 0.5s, -webkit-filter 0.5s;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.project-card > div {
+  display: block;
+  max-height: 65vh;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.front, .back {
+  background: white;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.project-card .back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.card-text, #projects button {
+  font-size: 18px;
+}
+
+#ave-card .btn {
+  background-color: black;
+  color: white;
+}
+
+#ave-card .btn:hover {
+  background-color: #333333;
+}
+
+#dev-card .btn {
+  background-color: #555555;
+  color: white;
+}
+
+#dev-card .btn:hover {
+  background-color: #3b3b3b;
+}
+
+#barkr-card .btn {
+  background-color: #ffe96f;
+}
+
+#barkr-card .btn:hover {
+  background-color: #ffda05;
+}
+
+#timer-card .btn {
+  background-color: #ab7aff;
+}
+
+#timer-card .btn:hover {
+  background-color: #8b38ff;
+}
+
+#killi-card .btn {
+  background-color: #79ebff;
+}
+
+#killi-card .btn:hover {
+  background-color: #1fddff;
+}
+
+#LICS-card .back {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(tan), to(white));
+  background-image: linear-gradient(tan, white);
+}
+
+#LICS-card .btn {
+  background-color: tan;
+}
+
+#LICS-card .btn:hover {
+  background-color: tan;
+}
+
+#LICS-card .card-img {
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
+#portfolio-card .back {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#40a2e3), to(#92bbd6));
+  background-image: linear-gradient(#40a2e3, #92bbd6);
+}
+
+#portfolio-card .btn {
+  background-color: #40a2e3;
+  color: white;
+}
+
+#portfolio-card .btn:hover {
+  background-color: #2b7eb6;
+}
+
+.project img {
+  max-width: 100%;
+}
+
+/*
+           .d8b.  d8888b.  .d88b.  db    db d888888b 
+          d8' `8b 88  `8D .8P  Y8. 88    88 `~~88~~' 
+          88ooo88 88oooY' 88    88 88    88    88    
+          88~~~88 88~~~b. 88    88 88    88    88    
+          88   88 88   8D `8b  d8' 88b  d88    88    
+          YP   YP Y8888P'  `Y88P'  ~Y8888P'    YP    
+                                                     
+                                                     
+      */
+#about h2 {
+  color: #40a2e3;
+}
+
+#about li {
+  margin-bottom: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+#about .card {
+  margin-bottom: 3vh;
+}
+
+#about .btn {
+  font-size: inherit;
+  color: black;
+}
+
+#headingOne {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#406be3), to(#40a2e3));
+  background-image: linear-gradient(#406be3, #40a2e3);
+}
+
+#headingTwo {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#40a2e3), to(#92bbd6));
+  background-image: linear-gradient(#40a2e3, #92bbd6);
+}
+
+#headingThree {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#92bbd6), to(#bce4ff));
+  background-image: linear-gradient(#92bbd6, #bce4ff);
+}
+
+#skills {
+  margin-bottom: 5vh;
+}
+
+.badge {
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.barrel-roll {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+#explosion {
+  background: url("../images/explosion.gif");
+  background-size: 30px 30px;
+  width: 30px;
+  /* Width of new image */
+  height: 30px;
+  /* Height of new image */
+  padding-left: 30px;
+  /* Equal to width of new image */
+}
+
+#resume-icon {
+  height: 5em;
+  cursor: pointer;
+}
+
+#resume-iframe {
+  height: 80vh;
+}
+
+.carousel-item img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+#key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#key > .badge {
+  font-size: 1.5rem;
+  margin: .25rem;
+}
+
+#accordionExample .card {
+  margin: 0;
+}
+
+#fast-facts .icon-and-heading {
+  margin-top: 3vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#fast-facts h3 {
+  font-weight: bold;
+}
+
+#fast-facts .fas {
+  font-size: 5vh;
+}
+
+#social {
+  margin: 8vh 0;
+}
+
+#social .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#social .social-icons i {
+  font-size: 30vw;
+}
+
+#social .social-icons img {
+  height: 30vw;
+}
+
+#social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-style: italic;
+}
+
+#facts > ul {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#facts > ul > li {
+  border-bottom: 1px solid #40a2e3;
+}
+
+/*
+ .o88b.  .d88b.  d8b   db d888888b  .d8b.   .o88b. d888888b 
+d8P  Y8 .8P  Y8. 888o  88 `~~88~~' d8' `8b d8P  Y8 `~~88~~' 
+8P      88    88 88V8o 88    88    88ooo88 8P         88    
+8b      88    88 88 V8o88    88    88~~~88 8b         88    
+Y8b  d8 `8b  d8' 88  V888    88    88   88 Y8b  d8    88    
+ `Y88P'  `Y88P'  VP   V8P    YP    YP   YP  `Y88P'    YP    
+      */
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/code-illustration.svg");
+  background-size: cover;
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
+  z-index: 0;
+}
+
+#contact-top-l-div {
+  border-top: 10px solid #40a2e3;
+}
+
+#contact-top-container {
+  border-right: 10px solid #40a2e3;
+  border-top: 10px solid #40a2e3;
+  border-bottom: 10px solid #40a2e3;
+  padding-right: 15px;
+}
+
+#contact-bottom-container {
+  border-left: 10px solid #40a2e3;
+  border-bottom: 10px solid #40a2e3;
+  padding-left: 15px;
+}
+
+#contact-bottom-r-div {
+  border-bottom: 10px solid #40a2e3;
+}
+
+.contact-text {
+  color: white;
+  font-size: 2rem;
+}
+
+.contact-button {
+  text-align: left;
+  margin: 5px;
+  font-size: 1.5rem;
+  background-color: #0044e3;
+  color: white;
+  border: 1px solid white;
+}
+
+.contact-button:hover {
+  background-color: #40a2e3;
+  color: white;
+}
+
+/*  
+          d88888b  .d88b.   .d88b.  d888888b d88888b d8888b. 
+          88'     .8P  Y8. .8P  Y8. `~~88~~' 88'     88  `8D 
+          88ooo   88    88 88    88    88    88ooooo 88oobY' 
+          88~~~   88    88 88    88    88    88~~~~~ 88`8b   
+          88      `8b  d8' `8b  d8'    88    88.     88 `88. 
+          YP       `Y88P'   `Y88P'     YP    Y88888P 88   YD 
+                                                             
+                                                             
+    */
+footer {
+  width: 100%;
+  color: white;
+  background-color: #030024;
+  padding: 5px;
+}
+
+footer > * {
+  position: relative;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: clamp(1rem, 1.5rem, 2rem);
+}
+
+/* 
+ .d8b.   .o88b.  .o88b. d88888b .d8888. .d8888.  .d8b.  d8888b. d888888b db      d888888b d888888b db    db 
+d8' `8b d8P  Y8 d8P  Y8 88'     88'  YP 88'  YP d8' `8b 88  `8D   `88'   88        `88'   `~~88~~' `8b  d8' 
+88ooo88 8P      8P      88ooooo `8bo.   `8bo.   88ooo88 88oooY'    88    88         88       88     `8bd8'  
+88~~~88 8b      8b      88~~~~~   `Y8b.   `Y8b. 88~~~88 88~~~b.    88    88         88       88       88    
+88   88 Y8b  d8 Y8b  d8 88.     db   8D db   8D 88   88 88   8D   .88.   88booo.   .88.      88       88    
+YP   YP  `Y88P'  `Y88P' Y88888P `8888Y' `8888Y' YP   YP Y8888P' Y888888P Y88888P Y888888P    YP       YP    
+ */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* 
+.88b  d88. d88888b d8888b. d888888b  .d8b.        .d88b.  db    db d88888b d8888b. d888888b d88888b .d8888. 
+88'YbdP`88 88'     88  `8D   `88'   d8' `8b      .8P  Y8. 88    88 88'     88  `8D   `88'   88'     88'  YP 
+88  88  88 88ooooo 88   88    88    88ooo88      88    88 88    88 88ooooo 88oobY'    88    88ooooo `8bo.   
+88  88  88 88~~~~~ 88   88    88    88~~~88      88    88 88    88 88~~~~~ 88`8b      88    88~~~~~   `Y8b. 
+88  88  88 88.     88  .8D   .88.   88   88      `8P  d8' 88b  d88 88.     88 `88.   .88.   88.     db   8D 
+YP  YP  YP Y88888P Y8888D' Y888888P YP   YP       `Y88'Y8 ~Y8888P' Y88888P 88   YD Y888888P Y88888P `8888Y' 
+ */
+/* 
+          db    db .d8888. 
+          `8b  d8' 88'  YP 
+           `8bd8'  `8bo.   
+           .dPYb.    `Y8b. 
+          .8P  Y8. db   8D 
+          YP    YP `8888Y' 
+                           
+                           
+*/
+@media only screen and (max-width: 576px) {
+  /* Typography */
+  body, p {
+    font-size: 1.25rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3, .contact-text {
+    font-size: 1.5rem;
+  }
+  .badge {
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  .display-3 {
+    font-size: 2rem;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+  }
+  footer * {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  section {
+    padding: 5vh 2vh;
+  }
+  /* Nav */
+  .navbar-toggler-icon, .navbar-brand {
+    outline: white auto 1px;
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+  .nav-item > a {
+    background-color: white;
+  }
+  form > .card-body {
+    padding: 10px;
+  }
+  .label {
+    margin-bottom: 4px;
+  }
+  .form-group {
+    margin-bottom: 8px;
+  }
+  #home {
+    padding: 10vh 0;
+  }
+}
+
+/* 
+          .d8888. .88b  d88. 
+          88'  YP 88'YbdP`88 
+          `8bo.   88  88  88 
+            `Y8b. 88  88  88 
+          db   8D 88  88  88 
+          `8888Y' YP  YP  YP 
+*/
+@media only screen and (min-width: 576px) {
+  body, p, label, li {
+    font-size: 1.5rem;
+  }
+  #home {
+    padding: 10vh 0;
+  }
+  #home-container {
+    padding: 2rem 2rem 2rem 0;
+  }
+  #headline {
+    font-size: 3.5rem;
+  }
+  section {
+    padding: 7vw 0;
+  }
+  #projects .btn {
+    font-size: 1.5rem;
+  }
+  .card-text {
+    font-size: 1.5rem;
+  }
+  svg {
+    height: 10vh;
+  }
+}
+
+/* 
+          .88b  d88. d8888b. 
+          88'YbdP`88 88  `8D 
+          88  88  88 88   88 
+          88  88  88 88   88 
+          88  88  88 88  .8D 
+          YP  YP  YP Y8888D' 
+                             
+                             
+*/
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  section {
+    padding: 10vh 0;
+  }
+  #home {
+    padding: 19vh 0;
+  }
+  #contact {
+    padding: 15vh 0;
+  }
+  #home-container {
+    padding: 2.5rem 2.5rem 2.5rem 0;
+  }
+  .navbar-brand {
+    padding: 8px;
+  }
+  header {
+    width: 99%;
+  }
+  .modal-dialog {
+    max-width: 75vw;
+  }
+  #dzh {
+    max-height: 50vh;
+    max-width: 100%;
+  }
+  .fa-linkedin, .fa-github-square {
+    font-size: 6rem;
+  }
+  svg {
+    height: 4vh;
+    margin: 3px;
+  }
+  #projects .btn {
+    font-size: 1.25rem;
+  }
+  #LICS-card .card-img {
+    border: none;
+  }
+  .card-text {
+    font-size: 1.2rem;
+  }
+  .zoom, .dev-icon {
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+  }
+  .zoom:hover, .dev-icon:hover {
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+    cursor: pointer;
+  }
+  .badge {
+    font-size: 3vh;
+  }
+  #fast-facts .icon-and-heading {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #fast-facts .card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #fast-facts .card-content > div {
+    padding: 5vh;
+  }
+  #fast-facts > div > * {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #fast-facts .fas {
+    font-size: 20vh;
+  }
+  #social .social-icons {
+    margin: 0 auto;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #social .social-icons i {
+    font-size: 20vh;
+  }
+  #social .social-icons img {
+    height: 20vh;
+  }
+}
+
+/* 
+          db       d888b  
+          88      88' Y8b 
+          88      88      
+          88      88  ooo 
+          88booo. 88. ~8~ 
+          Y88888P  Y888P  
+                          
+                          
+*/
+@media only screen and (min-width: 992px) {
+  #projects {
+    padding: 5vw 10vw;
+  }
+  #projects .btn {
+    font-size: 1.25rem;
+  }
+  #projects .card-container {
+    margin: 3% 0;
+  }
+  #projects .card-text {
+    font-size: 1.5rem;
+  }
+  #projects .card {
+    background-color: #bce4ff;
+    border: 0;
+  }
+  #projects .card-body {
+    height: 100%;
+    padding: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #bce4ff;
+  }
+  h3, .contact-text {
+    font-size: 1.75rem;
+  }
+  #about {
+    padding: 5vw 10vw;
+  }
+}
+
+#contact-l-div {
+  margin-right: 15px;
+  border-bottom: 10px solid #40a2e3;
+}
+
+#container-left {
+  padding: 0 3.5rem 3.5rem 0;
+  border-right: 10px solid #40a2e3;
+  border-bottom: 10px solid #40a2e3;
+}
+
+#contact-container {
+  margin: 0 -15px;
+}
+
+#container-right {
+  padding: 3.5rem 0 3.5rem 3.5rem;
+  border-top: 10px solid #40a2e3;
+}
+
+#contact-r-div {
+  margin-left: 15px;
+  border-top: 10px solid #40a2e3;
+}
+
+/* 
+          db    db db      
+          `8b  d8' 88      
+           `8bd8'  88      
+           .dPYb.  88      
+          .8P  Y8. 88booo. 
+          YP    YP Y88888P 
+                           
+                           
+          */
+@media only screen and (min-width: 1200px) {
+  section {
+    padding: 9vh 0;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  #home-container {
+    padding: 3rem 3rem 3rem 0;
+  }
+  #headline {
+    top: 33%;
+    font-size: 5rem;
+  }
+  .card-container {
+    margin: 1.5rem 0;
+  }
+  .card-text {
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
