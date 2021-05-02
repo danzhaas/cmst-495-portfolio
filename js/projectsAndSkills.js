@@ -23,7 +23,8 @@ const ave = {
     button2:{
         text:"See Code",
         href:"https://github.com/our-mintbean-team/texteditor-mintbean"
-    }
+    },
+    synopsis:"Created in 2021 for a Mintbean Hackathon along with developers Desmond Pringle and Isaiah Thomas.  The theme for this Hackathon was to build your own rich text editor. The main requirements for this project were that it needed to include a working toolbar, text editor, file management, and basic authentication. Users can make edits in the text editor and incorrect spelling prompts the mistakes. The toolbar consists of basic functions like bold, italic, underline, etc. Each document can be titled, users can create new docs, etc.   The tech stack was the MERN stack and React.js, Express.js, Node.js, MongoDB, CreateReactApp, React Router, and SASS."
 }
 
 
@@ -44,7 +45,8 @@ const dev = {
     button2:{
         text:"See Code",
         href:"http://github.com/danzhaas/dev-connector"
-    }
+    },
+    synopsis:"Created in 2021 as a personal project, this is a social network for web developers.  A hybrid communication platform combining features popular in Discord and LinkedIn, it has message boards and chat rooms; also, developers can create their own profiles and link to their github accounts and share their education and work history.  The design emphasizes connections and conversation: in the chat window, developer names and conversation titles have a bold weight, and icons encourage clicking to read user profiles.  In the profile pages, the “White Space is Not your Enemy” philosophy is utilized as to space out the information about each user. "
 }
 
 
@@ -65,7 +67,8 @@ const barkr = {
     button2:{
         text:"See Code",
         href:"http://github.com/danzhaas/barkr-fullstack"
-    }
+    },
+    synopsis:"Created in 2020 as a personal project, this is a dog-centered social network / companion tool for man’s best friend.  Functions as a place to share personalized information about any dog in an easy and fun way: see basic biographic information, a list of commands with animated gifs, google maps, and care instructions.  Designed to have a fun and simple interface: the primary color scheme evokes a youthful and fun mindset; the layout and styling involve short text fields only for ease of reading; icons with dog-related imagery are used frequently to make it more fun.  Made with React, React Router, Bootstrap, Javascript, HTML, CSS."
 }
 
 
@@ -87,7 +90,8 @@ const distractionTimer = {
     button2:{
         text:"See Code",
         href:"https://github.com/danzhaas/danzhaas.github.io/tree/source/project-adhd/distraction-timer"
-    }
+    },
+    synopsis:"Created in 2020 as a personal project, this is a productivity tool to measure and visualize how much time you are distracted during a task.  The tech stack is Gatsby, React, React Router, JS, Bootstrap, HTML, CSS. and SASS.  The user interface has been designed to be minimally distracting: it has a small footprint on the page so it can be put in the bottom corner of a computer screen or displayed in full on a smartphone screen while the user works.  The timer itself can be hidden as well so the ticking seconds are not a distraction.  The graphs were designed with a consistent binary color scheme for simplicity: blue is distracted time, gray is focused time."
 }
 
 
@@ -96,7 +100,7 @@ const killi = {
     name:"Killifish Classic",
     id:"killi",
     thumbnailSrc:"images/killi-tile-500.jpg",
-    imageSrc:"images/killi-tile-500.jpg",
+    imageSrc:"images/killi-landscape.jpg",
     devIcons:[
         "jQuery","Javascript","HTML","CSS","less"
     ],
@@ -108,7 +112,8 @@ const killi = {
     button2:{
         text:"See Code",
         href:"http://github.com/danzhaas/danzhaas.github.io/tree/master/killifish-classic"
-    }
+    },
+    synopsis:"Created in 2019 for Principles of Web Design and Technology II, this is an event website for an aquarium hobbyists convention.  It functions to deliver information about the event, and the site map was based around user stories.  The site serves people who are just learning about the event for the first time and will likely come as spectators, hobbyists who may want to participate in the fish show by entering their own fish, and sponsors and vendors who seek to access this audience’s interest.  The design is inspired by the beautiful fish themselves: the palette includes bold oranges, teals, reds, and blues that can be seen in images of the fish themselves.  The background is a fish tank to immerse the user in the world of the aquarium from the moment they enter the site."
 }
 
 
@@ -129,33 +134,13 @@ const LICS = {
     button2:{
         text:"See Code",
         href:"https://github.com/danzhaas/danzhaas.github.io/tree/master/lorem-ipsum-cancer-studies"
-    }
-}
-
-
-// My Portfolio
-const portfolio = {
-    name:"My Portfolio",
-    id:"portfolio",
-    thumbnailSrc:"images/portfolio-tile-500.jpg",
-    imageSrc:"images/portfolio-landscape.jpg",
-    devIcons:[
-        "Node.js","Express","MongoDB","jQuery","Javascript","Bootstrap","Sass","CSS","HTML"
-    ],
-    desc:"You're looking at it.  Visit my Trello board to see how I used a Kanban board to plan and create this project.",
-    button1: {
-        text:"Trello Board",
-        href:"https://trello.com/b/pXxa9X5h/danzhaasgithubio"
     },
-    button2:{
-        text:"See Code",
-        href:"https://github.com/danzhaas/danzhaas.github.io/tree/master/index.html"
-    }
+    synopsis:"Created in 2019 for Principles of Web Design and Technology I and then updated in 2021, this is an informational site made for a medical research study.  Written with user stories in mind, this site serves study participants, medical scientists, and sponsors or collaborators.  Designed to make complex content easily understood by the target audience, the formatting of the content and utilization of headings, tables, and unordered lists is diligent so as to present the content in digestible chunks.  The white background does not compete with the text and pictures for attention, so it is easier for users to focus on and understand the content."
 }
 
 
 // List of Projects
-const myProjects = [dev, distractionTimer, barkr, LICS, portfolio, ave];
+const myProjects = [dev, distractionTimer, barkr, LICS, killi, ave];
 
 
 // Development Icon Library

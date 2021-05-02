@@ -24,10 +24,18 @@ var cardTemplate, iconsTemplate;
 function populateTemplate(project) {
 
     cardTemplate = `
-        <div id="${project.id}-card" class="project card mb-3">
+    <div class="row mb-md-4">
+        <div class="col-5"><hr></div>
+        <div class="col-2">
+            <h1 class="number"></h1>
+        </div>
+        <div class="col-5"><hr></div>
+    </div>    
+    
+    <div id="${project.id}-card" class="project card mb-3">
             <div class="row g-0">
 
-                <div class="col-md-8">
+                <div class="col-md-8 order-md-2">
                     <div class="front zoom">
                         <a href='${project.button1.href}' target='_blank'>
                             <img class="card-img d-md-none" src="${project.thumbnailSrc}"
@@ -38,8 +46,8 @@ function populateTemplate(project) {
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card-body">
+                <div class="col-md-4 order-md-1">
+                    <div class="card-body pl-md-0 pt-md-0">
                         <h2 class="card-title m-0">${project.name}</h2>
                         <div id="${project.id}-icons">
                         </div>
@@ -53,6 +61,13 @@ function populateTemplate(project) {
                             </a>
                         </div>
                     </div>
+                </div>
+
+            </div>
+            <div class="row g-0 p-md-3">
+
+                <div class="col-md-12 p-md-0">
+                    <p class="synopsis">${project.synopsis}</p>
                 </div>
 
             </div>
@@ -88,6 +103,17 @@ function generateCard(project) {
 }
 
 myProjects.forEach(generateCard);
+
+function numberProjects() {
+    //get all number nodes
+    const numberHeaders = document.querySelectorAll(".number");
+    //use loop to increment through each
+    for (i=0; i<numberHeaders.length; i++) {
+        //use i value to replace innertext
+        numberHeaders[i].innerText = (i+1);
+    }
+}
+numberProjects();
 
 // TOOLTIPS
 $(function () {

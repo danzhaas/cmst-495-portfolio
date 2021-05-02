@@ -145,7 +145,7 @@ a:hover {
 hr {
   width: 100%;
   border-top: 10px solid #40a2e3;
-  margin: 5vh;
+  margin: 5vh 0;
 }
 
 #about ul {
@@ -268,6 +268,11 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
   padding: 0;
 }
 
+.number {
+  text-align: center;
+  font-weight: bold;
+}
+
 #cards {
   padding: 0;
 }
@@ -336,6 +341,10 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
 
 .card-text, #projects button {
   font-size: 18px;
+}
+
+.synopsis {
+  font-size:18px
 }
 
 #ave-card .btn {
@@ -573,6 +582,10 @@ db   8D 88.     Y8b  d8    88      .88.   `8b  d8' 88  V888 db   8D
       -ms-flex-direction: column;
           flex-direction: column;
   font-style: italic;
+}
+
+#facts {
+  height:50vh;
 }
 
 #facts > ul {
